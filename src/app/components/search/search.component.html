@@ -1,0 +1,42 @@
+<div class="searchMenu">
+  <div class="filter">
+    <app-drop class="options year" *ngFor="let menu of sortByYear" title="{{ menu.title }}">
+      <a *ngFor="let option of menu.options" class="option" (click)="filterMoviesByYear(option.name)" >
+        <li>{{ option.name }}</li>
+      </a>
+    </app-drop>
+
+    <app-drop class="options genre" *ngFor="let menu of sortByGenre" title="{{ menu.title }}">
+      <a *ngFor="let option of menu.options" class="option" (click)="filterMoviesByCategory(option.name)">
+        <li>{{ option.name }}</li>
+      </a>
+    </app-drop>
+
+    <app-drop class="options rate" *ngFor="let menu of sortByRate" title="{{ menu.title }}">
+      <a *ngFor="let option of menu.options" class="option" (click)="filterMoviesByRate(option.name)">
+        <li>{{ option.name }}</li>
+      </a>
+    </app-drop>
+  </div>
+
+  <div class="list-titles">
+
+    <h2 class="h4">{{ currentFilter ? 'Filtered by ' + currentFilter : title }}</h2>
+
+    <div class="d-flex flex-wrap overflow-hidden titles">
+
+      <app-movie-item *ngFor="let movie of filteredMovieList" class="movie-item"
+        cover="{{ movie.cover }}"
+        name="{{ movie.name }}"
+        relevance="{{ movie.relevance }}"
+        age="{{ movie.age }}"
+        parts="{{ movie.parts }}"
+        categories="{{ movie.categories }}"
+        link="{{ movie.link }}">
+      </app-movie-item>
+
+    </div>
+  </div>
+</div>
+
+
