@@ -1,0 +1,40 @@
+<div class="list-titles">
+
+  <h2 class="h4">{{ title }}</h2>
+
+  <div class="d-flex flex-wrap overflow-hidden titles">
+
+    <app-movie-item *ngFor="let movie of movieList" class="movie-item"
+      cover="{{ movie.cover }}"
+      name="{{ movie.name }}"
+      relevance="{{ movie.rate }}"
+      age="{{ movie.age }}"
+      parts="{{ movie.parts }}"
+      categories="{{ movie.categories }}"
+      link="{{ movie.link }}"
+      >
+      <button *ngIf="!movie.isInList" type="button" class="btn-see" (click)="onAddListButtonClick(movie)">Add List</button>
+      <button *ngIf="movie.isInList" type="button" class="btn-see" (click)="onRemoveListClick(movie)">Remove</button>
+    </app-movie-item>
+
+  </div>
+
+  <h2 class="h4" *ngIf="addedMovies.length > 0">{{ title2 }}</h2>
+
+  <div class="d-flex flex-wrap overflow-hidden my-list">
+
+    <app-movie-item
+      *ngFor="let movie of addedMovies" class="movie-item"
+      cover="{{ movie.cover }}"
+      name="{{ movie.name }}"
+      relevance="{{ movie.relevance }}"
+      age="{{ movie.age }}"
+      parts="{{ movie.parts }}"
+      categories="{{ movie.categories }}"
+      link="{{ movie.link }}">
+      <button type="button" class="btn-see" (click)="onRemoveListClick(movie)">Remove</button>
+    </app-movie-item>
+
+  </div>
+
+</div>

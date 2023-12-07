@@ -1,0 +1,36 @@
+.list-titles img {
+  min-width: 160px;
+  max-width: 80%;
+}
+
+h2 {
+  color: #e5e5e5;
+  margin-left: 10px;
+}
+
+.list-titles .titles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-item {
+  margin-bottom: 5vh;
+}
+
+.movie-item .btn-see {
+  margin-left: 5px;
+  background: none;
+  border: #fff 2px solid;
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 1s;
+  }
+}
+
