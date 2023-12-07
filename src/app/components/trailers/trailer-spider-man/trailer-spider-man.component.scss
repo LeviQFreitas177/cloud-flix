@@ -1,0 +1,82 @@
+.trailer {
+  width: 100%;
+  margin-top: 5%;
+}
+
+.trailer iframe {
+  width: 100%;
+  height: 500px;
+}
+
+.trailer .more-info {
+  margin-left: 2%;
+  margin-bottom: 5%;
+}
+
+.trailer h1 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+.trailer .ageRelevance {
+  display: flex;
+  align-items: center;
+}
+
+.trailer .age {
+  padding: 2px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  font-size: 12px;
+  height: 24px;
+  border-radius: 2px;
+  color: #FFF;
+}
+
+.age-0 {
+  background-color: rgb(0, 156, 76);
+}
+
+.age-0:before {
+  content: 'L';
+}
+
+.trailer .rate {
+  color: #3FAD56;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.trailer .description {
+  margin-top: 2%;
+  margin-bottom: 5%;
+  width: 50%
+}
+
+.trailer p {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .trailer {
+    margin-top: 5%;
+  }
+
+  .trailer iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  .trailer .more-info {
+    margin-left: 5%;
+  }
+
+  .trailer .description {
+    width: 90%;
+  }
+}
