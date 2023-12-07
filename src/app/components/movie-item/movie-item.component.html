@@ -1,0 +1,30 @@
+<div class="title-item">
+  <img src="{{ cover }}" alt="Título">
+  <div class="items">
+    <div class="left-side">
+
+      <div class="buttons">
+        <a class="link" href="{{ link }}">
+          <button type="button" class="btn-see">See More</button>
+        </a>
+
+        <ng-content>
+        </ng-content>
+      </div>
+
+      <h2>{{ name }}</h2>
+
+      <ul class="infos">
+        <li class="relevance">{{ relevance }}</li>
+
+        <li class="age age-{{age}}"></li>
+
+        <li class="parts">{{ parts }}</li>
+      </ul>
+
+      <ul class="categories">
+        <li>{{ categories }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
