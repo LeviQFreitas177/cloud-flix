@@ -1,0 +1,57 @@
+.navbar {
+  z-index: 1000;
+}
+
+.navbar.bg-dark {
+  background-color: rgba(0,0,0,.6)!important;
+}
+
+.navbar img {
+  height: 24px;
+}
+
+.navbar .option {
+  color: #d9d9d9;
+}
+
+.navbar .logo {
+  height: 50px;
+}
+
+
+.media-avatar i {
+  font-size: 30px;
+}
+
+@media (min-width: 992px) {
+  .navbar.bg-dark {
+      background-color: transparent!important;
+      background-image: url('/assets/images/header_gradient.png');
+      background-repeat: repeat-x;
+  }
+
+  .navbar-brand.flex-grow-1 {
+      flex-grow: initial!important;
+  }
+
+  .navbar ul.nav {
+      flex-grow: 1!important;
+  }
+
+  .navbar i {
+      font-size: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar ul.nav li {
+      padding: 0;
+  }
+  .navbar ul.nav {
+      color: rgba(255, 255, 255, .5)!important;
+  }
+  .navbar ul.nav .active {
+      color: rgba(255, 255, 255, 1)!important;
+      font-weight: bold;
+  }
+}

@@ -1,0 +1,13 @@
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div>
+    <a class="navbar-brand flex-grow-1" href="#">
+        <img src="assets/images/logo.png" class="logo">
+    </a>
+  </div>
+
+  <ul class="nav option d-lg-flex">
+    <li *ngFor="let option of options" class="nav-item d-xl-flex">
+      <a class="nav-link text-reset" href="{{ option.link }}">{{ option.name }}</a>
+    </li>
+  </ul>
+</nav>
