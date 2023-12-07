@@ -1,4 +1,14 @@
-# CloudFlix
+# CineFlix - Your Movie Portal
+
+Welcome to CineFlix, the perfect place to discover and explore the world of movies. Our platform offers a wide variety of movies for all tastes. From timeless classics to the latest Hollywood productions, we have everything you need for your movie-going experience.
+
+## Key Features
+
+- Intuitive Navigation: Easily explore different categories, genres and new releases.
+- Movie Details:** Get detailed information about each movie, including cover, age rating, duration and synopsis.
+- Favorites List:** Keep a list of your favorite movies to watch later.
+- Add to List:** Add movies to your personal list to keep track of what you've already watched.
+- Efficient Search:** Find movies quickly with our powerful search tool.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
 

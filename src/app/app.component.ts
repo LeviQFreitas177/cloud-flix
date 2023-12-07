@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cloud-flix';
+
+  menuOpened = false;
+
+  setMenuState(state: boolean) {
+    this.menuOpened = state
+  }
+
+  closeMenu() {
+    this.menuOpened = false;
+  }
 }
