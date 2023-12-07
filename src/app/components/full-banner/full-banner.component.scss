@@ -1,0 +1,77 @@
+.full-banner {
+  background-image: url('../../../assets/images/full-banner.jpg');
+  min-height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.full-banner small {
+  color: #999898;
+}
+
+.age {
+  padding: 2px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  font-size: 12px;
+  height: 24px;
+  border-radius: 2px;
+  color: #FFF;
+}
+
+
+.age-12 {
+  background-color: #CDA521;
+  color: #000;
+}
+
+.age-12:before {
+  content: '12';
+}
+
+
+.full-banner .info {
+  margin-right: 1vh;
+}
+
+.full-banner .btn-primary {
+  background-color: #85E6C0;
+  color: #0B0B0D;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  min-width: 100px;
+  &:hover {
+    transition: 1s;
+    background-color: #0B0B0D;
+    color: #85E6C0;
+    transform: scale(105%);
+  }
+}
+
+@media (min-width: 576px) {
+  .full-banner {
+      min-height: 256px;
+  }
+}
+
+@media (min-width: 768px) {
+  .full-banner .d-flex {
+      align-items: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .full-banner {
+      min-height: 50vh;
+  }
+
+  .full-banner p {
+      color: #999898;
+      max-width: 50vw;
+  }
+}
