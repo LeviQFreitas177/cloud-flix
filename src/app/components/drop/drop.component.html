@@ -1,0 +1,7 @@
+<div class="dropdown">
+  <button (click)="toggleDropdown()">{{ title }}</button>
+  <ul [ngClass]="{'show': isDropdownOpen}">
+    <ng-content>
+    </ng-content>
+  </ul>
+</div>
